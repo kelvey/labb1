@@ -1,3 +1,59 @@
 # labb1: 
 #Group: 49 
 #Members: Daniel McKelvey, Anton Sandernäs
+
+
+Labb1: Awnsers
+
+Del B:
+
+10 
+a) Clear errorcode: shows the <filename>:<line>:< error>. In this case a missing '{'. 
+The next line print the line in question whilst using '^' on the line unde to mar the place.
+
+Copied from console:
+HelloWorld.java:4: error: '{' expected
+public class HelloWorld 
+                       ^
+1 error
+
+b) Here the errorcode is not as explicitit and does not print/know the acctual error. However it gives an 
+aproximate location in this case the last nonline ('\n') character '}'. Otherwise it is the same as the previous.
+
+
+HelloWorld.java:9: error: reached end of file while parsing
+    }
+     ^
+1 error
+
+c) There is no errorcode in this case, because all classes in one file are visible in that specific file. However if we 
+would try to use the class in another package we would get an error because the compiler can't find the class.   
+
+d) There is no error at compile time bcause the compiler can't find a compile-time error; however when we try to run the program
+the jvm tries to find a main method i the relevant .class file. Because the main scope of methods and variables 
+in classes are hidden to the outside, the compiler won't find the 'main' method, thus resulting in a runtime-error  
+But the jvm shows the relevant error
+
+Error: Main method not found in class HelloWorld, please define the main method as:
+   public static void main(String[] args)
+or a JavaFX application class must extend javafx.application.Application
+
+
+e) Again there is no error when compiling, probably because the compiler does not differentiate between methods.
+I can imagine this is very convinient when creating class-files, sectioning the code to enhance readability 
+and making it easier to reuse classes/code. But the jvm shows the relevant error
+
+Error: Main method is not static in class HelloWorld, please define the main method as:
+   public static void main(String[] args)
+
+f) In this case we get 2 error messages: one when the compiler tries to catagorize "satic" amongst the java-language
+specific identifies such as static, piblic etc. and the other when the compiler tries to "create/define" "main"; 
+however the compiler sees "satic"  as a return type, but because there are two return types the compiler throws an error. 
+
+HelloWorld.java:6: error: <identifier> expected
+    public statc void main(String[] args) {
+                ^
+HelloWorld.java:6: error: invalid method declaration; return type required
+    public statc void main(String[] args) {
+                      ^
+2 errors
