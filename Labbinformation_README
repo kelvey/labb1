@@ -1,0 +1,28 @@
+
+    one README.pdf file (sometimes extended to a full labreport) with information about your submission useful for the grader like (preferably in this order)
+        your labgroupnumber and your names,
+        what files belong to each subproblem,
+        what is the compilation/execution commands for each subproblem
+        (this is not needed in the case of "javac file.java" but only if compilation command is nonstandard)
+        other useful information for the grader,
+
+        and answers to questions and things that are not well contained in the source code (figures, explanations
+        of the solutions (if needed), UML diagrams, references etc) and answers to posible questions.
+        It also includes reference to all your sources of information that helped you solve the problems, books, 
+        magazines, web, alive or dead and so on. The only exception is the coursebook, course slides and irrelevant sources (like your boy/girl-friends continuous support) which you don't need to mention and of course you don't need to mention that you were helped by an assistant on the course.
+        Preferably you submit this as a pdf or postscript file. If that's not possible you can hand in handwritten 
+        pages on paper directly to the examiner. Be prepared to motivate why you can't make a pdf file. In that case;
+        make a README.txt (text file) and say so in your README-file. 
+
+    (compilable) source code (as text files) for every subproblem in separate files.
+    Dont forget labgroupnumber and name(s) in every file.
+
+    You must implement programs in the programming language Java and the program has to be compilable (and runable)
+    on a StuDat computer see below.
+
+    The correctness of your labs will be partially checked by testing software therefore you must be careful to 
+    follow the instructions in each assignment about input/output and placements of code.
+
+    Once more; dont forget labgroupnumber and name(s) in every file. 
+    
+         
